@@ -1,27 +1,43 @@
 #include <stdio.h>
 
+#define linhas 10
+#define colunas 10
 int main(){
-    int matriz[9][9] = {
-        
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0},
-        {0, 0, 0, 0, 0, 3, 3, 3, 0},
-        {0, 0, 0, 0, 0, 0, 0, 0, 0}
 
-    };
+printf("dasafio xadrez\n");
+    printf("conmit\n");
+    printf("\n");
+
+    int i = 1;
     
+    while (i <= 5){
+        if(i % 1 <= 0)
+        {
+          printf("torre moveu %d casas para frente \n",i);                  
+        }
 
-    printf("a parte do navio na posição [7][7] é %d \n", matriz[7][7]); 
-    printf("a parte do navio na posição [7][6] é %d \n", matriz[7][6]);
-    printf("a parte do navio na posição [7][5] é %d \n", matriz[7][5]);
+        i++;
+    }  
+    printf("\n");
+
+    int j = 1;
+ 
+    do {
+        printf("bispo moveu %d casa para frente direita \n", j);
+        j++;
+
+    } while (j <= 5);
+
+    printf("\n");
+
+    for (int k = 1; k <= 8; k++)
+    {
+      printf("rainha moveu %d casas para esquerda \n", k);
+    }
+
    
    
-    
-    return (0);
+
+ return 0;
+
 }
-    
